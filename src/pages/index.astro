@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
 					</button>
 				</a>
 		</header>
-		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8">
+		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8 mx-auto justify-center">
 			<div class="w-auto">
 			<h2 class="text-3xl font-bold">What is DopeAI?</h2>
 			<p class="text-gray-500 text-xl mt-4">
@@ -37,7 +37,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<p class="text-[15rem]">🚀</p>
 		</article>
-		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8">
+		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8 mx-auto justify-center">
 			<div class="w-auto">
 			<h2 class="text-3xl font-bold">Supercharged with AI</h2>
 			<p class="text-gray-500 text-xl mt-4">
@@ -46,12 +46,49 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<p class="text-[15rem]">🤖</p>
 		</article>
+		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8 mx-auto justify-center">
+			<div class="w-auto">
+			<h2 class="text-3xl font-bold">Why?</h2>
+			<p class="text-gray-500 text-xl mt-4">
+				All of our tools are built with the developer in mind. We are developers ourselves and we know how hard it is to code. We want to make coding easier for everyone. Our tools do things such as: give you examples, code suggestions, error fixes, and more!
+			</p>
+			</div>
+			<p class="text-[15rem]">🤔</p>
+		</article>
+		<summary class="mt-20 mx-auto items-center flex flex-col gap-8 justify-center">
+			<!--  CTAs -->
+			<p class="text-3xl font-bold">Ready to get started?</p>
+			<div class="flex flex-col sm:flex-row items-center gap-8">
+				<a href="">
+					<button class="bg-blue-800 font-bold py-2 px-4 rounded">
+						Products
+					</button>
+				</a>
+				<a href="">
+					<button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded ml-4">
+						Pricing
+					</button>
+				</a>
+			</div>
+		</summary>
+		<!--  footer -->
+		<footer class="mt-20">
+			<p class="text-center text-gray-500 text-sm mt-4">
+				© 2021 DopeAI. All rights reserved.
+			</p>
+		</footer>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
 		padding: 2rem;
+	}
+
+		/* make the text bigger on ultra wide screens */
+	@media (min-width: 2560px) {
+		main {
+			font-size: 1.5rem;
+		}
 	}
 </style>
