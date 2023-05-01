@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 			<h1 class="text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-5xl font-extrabold text-transparent bg-clip-text">
 				DopeAI: A whole suite of AI tools to help you code better
 			</h1>
-			<p class="text-gray-500 text-xl mt-4">
+			<p class="text-gray-500 text-xl mt-4 w-1/2 mx-auto">
 				We are a team of developers who are passionate about making coding
 				easier for everyone. We are building a suite of AI tools to help you
 				code productively.
@@ -26,13 +26,32 @@ import Layout from '../layouts/Layout.astro';
 					</button>
 				</a>
 		</header>
+		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8">
+			<div class="w-auto">
+			<h2 class="text-3xl font-bold">What is DopeAI?</h2>
+			<p class="text-gray-500 text-xl mt-4">
+				DopeAI is a suite of AI tools to help you code better. We are a team of
+				developers who are passionate about making coding easier for everyone.
+				We are building a suite of AI tools to help you code productively.
+			</p>
+			</div>
+			<p class="text-[15rem]">🚀</p>
+		</article>
+		<article class="mt-20 flex flex-col sm:flex-row items-center gap-8">
+			<div class="w-auto">
+			<h2 class="text-3xl font-bold">Supercharged with AI</h2>
+			<p class="text-gray-500 text-xl mt-4">
+				All our tools are supercharged with AI. We use the latest AI technologies such as the latest OpenAI models (davinci-codex, gpt-3.5, gpt-4) to help you code better and faster.
+			</p>
+			</div>
+			<p class="text-[15rem]">🤖</p>
+		</article>
 	</main>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+		padding: 2rem;
 	}
 </style>
